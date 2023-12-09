@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Pão Nosso</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/responsivo.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Padaria Pão Nosso</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="title">Nossos Produtos</h2>
+        </section>
+        <section class="produtos">
+            <div class="produto" onclick="showProductInfo('Americano', 'Delicioso americano assado diariamente.')">
+                <img src="./src/imagens/americano.jpg" alt="Americano">
+                <h3>Americano</h3>
+            </div>
+            <div class="produto"
+                onclick="showProductInfo('Salgados', 'Uma variedade de salgados para satisfazer seu paladar.')">
+                <img src="./src/imagens/enroladinho de salsicha2.jpg" alt="Salgados">
+                <h3>Enroladinho de salsicha</h3>
+            </div>
+            <div class="produto" onclick="showProductInfo('Sonho', 'Delicioso sonho.')">
+                <img src="./src/imagens/sonho.jpg" alt="Sonho">
+                <h3>Sonho</h3>
+            </div>
+            <div class="produto" onclick="showProductInfo('Esfiha', 'Delicioso pão fresco assado diariamente.')">
+                <img src="./src/imagens/esfiha (2).jpg" alt="Esfiha">
+                <h3>Esfiha</h3>
+            </div>
+        </section>
+
+        <section class="product-info">
+            <h2>Detalhes do Produto</h2>
+            <div id="product-detail">
+                <img src="" alt="" id="product-image">
+                <h3 id="product-title"></h3>
+                <p id="product-description"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
